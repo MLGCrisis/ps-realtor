@@ -94,6 +94,8 @@ CreateProperty = {
         }
         
         TriggerServerEvent("bl-realtor:server:registerProperty", data)
+        TriggerEvent('wais:addmissionxp:createprop', 1) --added by pamela for wais battlepass
+
         lib.notify({ description = 'Property was created!', type = 'success'})
         self:CancelCreating()
     end,
